@@ -17,6 +17,8 @@ formEl.addEventListener("submit", function (event) {
 
   console.log("sto chiamando:", apiURL);
 
+  inputEl.value = "";
+
   fetch(apiURL)
     .then((response) => {
       console.log({ response });
