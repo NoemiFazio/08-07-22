@@ -1,0 +1,64 @@
+body {
+  box-sizing: border-box;
+  background-image: url("./photo-1507842217343-583bb7270b66.avif");
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  align-items: center;
+  text-align: center;
+  font-family: sans-serif;
+  font-size: 17px;
+  font-weight: 500px;
+
+  color: white;
+}
+
+h1 {
+  margin: 40px 0px 0px;
+}
+
+#app {
+  display: flex;
+  flex-direction: column;
+
+  width: 400px;
+  min-height: 200px;
+  height: auto;
+  border: 2px solid white;
+  border-radius: 20px;
+  overflow: auto;
+}
+.todo-form {
+  margin-top: 30px;
+}
+.task-list {
+  padding-left: 0px;
+  display: flex;
+  flex-direction: column;
+}
+.task-list li {
+  display: block;
+
+  padding: 0.5rem 0px;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.task-list li input[type="checkbox"] {
+  display: inline-block;
+  margin-right: 0.5rem;
+}
+
+/* input di tipo checkbox dentro il li, solo che checked */
+.task-list li input[type="checkbox"]:checked {
+  margin-right: 1rem;
+}
+
+/* uno span, dopo un input di tipo checkbox dentro il li, solo che checked */
+.task-list li input[type="checkbox"]:checked ~ span {
+  text-decoration: line-through;
+}
